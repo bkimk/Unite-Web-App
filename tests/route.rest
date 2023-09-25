@@ -1,0 +1,65 @@
+GET http://localhost:3000/resource
+
+###
+
+POST http://localhost:3000/resource
+Content-Type: application/json
+
+{
+    "name": "shr",
+    "kindofresource": "shelter",
+    "email": "healthresource@gmail.com",
+    "description": "Health resources means drugs, biological products, medical devices, materials, facilities, health supplies, services and equipment required to diagnose, mitigate or prevent the impairment of, improve, treat, cure, or restore the physical or mental health conditions of the population.",
+    "address": "2220 Pacheco Pass Hwy, Gilroy, CA 95020",
+    "image": ["image1", "image2"], 
+    "phonenumber": "408777888",
+    "website": "healthresource@gmail.com",
+    "hours": {
+      "monday": {
+        "open": -8,
+        "close": 18,
+        "isClose": false
+      },
+      "tuesday": {
+        "open": 8,
+        "close": 18,
+        "isClose": false
+      },
+      "wednesday": {
+        "open": 8,
+        "close": 18,
+        "isClose": false
+      },
+      "thursday": {
+        "open": 8,
+        "close": 18,
+        "isClose": false
+      },
+      "friday": {
+        "open": 8,
+        "close": 18,
+        "isClose": false
+      },
+      "saturday": {
+        "isClose": true
+      },
+      "sunday": {
+        "isClose": true
+      }
+    }
+    
+}
+
+###
+
+DELETE http://localhost:3000/resource/64acaa758b2e72924a8be803
+###
+
+PUT http://localhost:3000/resource/64a962c4e3c7408f4f22eb07
+Content-Type: application/json
+
+{
+  "name": "resilience",
+  "email": "resilience@gmail.com",
+  "description": "Our goal is to provide tools for individuals to learn life skills that develop mental and emotional strength and resilience. We provide Social Emotional Learning curriculum, games, apps, and tools for schools, parents, and community groups."
+}
